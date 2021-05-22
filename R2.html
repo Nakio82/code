@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="R2.css">
+    <title>Tabla Responsive</title>
+</head>
+<body>
+    <header>
+        <h2>Listado del Grupo</h2>
+    </header>
+    <!-- Creamos lo tabla -->
+    <div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Email</th>
+                <th>Club</th>
+                <th>Edad</th>
+                <th>Ciudad</th>
+            </tr>
+        </thead>
+        <!-- para que en mobile salga la descripción aplicamos un custom attribute: 'data-' a cada td y le colocamos los nombres del th -->
+        <tbody>
+            <tr>
+                <td data-title="Nombre">Juan</td>
+                <td data-title="Apellido">Sanchez</td>
+                <td data-title="Email">juansanchez@gmail.com</td>
+                <td data-title="Club">River</td>
+                <td data-title="Edad">23</td>
+                <td data-title="Ciudad">CABA</td>
+            </tr>
+            <tr>
+                <td data-title="Nombre">Luz</td>
+                <td data-title="Apellido">Espindola</td>
+                <td data-title="Email">espindolaluz@gmail.com</td>
+                <td data-title="Club">Racing</td>
+                <td data-title="Edad">25</td>
+                <td data-title="Ciudad">GBA</td>
+            </tr>
+            <tr>
+                <td data-title="Nombre">Federico</td>
+                <td data-title="Apellido">Trotta</td>
+                <td data-title="Email">fede_trotta@gmail.com</td>
+                <td data-title="Club">Boca</td>
+                <td data-title="Edad">26</td>
+                <td data-title="Ciudad">GBA</td>
+            </tr>
+            <tr>
+                <td data-title="Nombre">Luis</td>
+                <td data-title="Apellido">Ramirez</td>
+                <td data-title="Email">lr_lacade@gmail.com</td>
+                <td data-title="Club">Racing</td>
+                <td data-title="Edad">35</td>
+                <td data-title="Ciudad">CABA</td>
+            </tr>
+            <tr>
+                <td data-title="Nombre">Romina</td>
+                <td data-title="Apellido">Trejo</td>
+                <td data-title="Email">romitrejo@hotmail.com</td>
+                <td data-title="Club">Velez</td>
+                <td data-title="Edad">30</td>
+                <td data-title="Ciudad">GBA</td>
+            </tr>
+            <tr>
+                <td data-title="Nombre">Victoria</td>
+                <td data-title="Apellido">Lopez</td>
+                <td data-title="Email">lopezviky@hotmail.com</td>
+                <td data-title="Club">River</td>
+                <td data-title="Edad">21</td>
+                <td data-title="Ciudad">GBA</td>
+            </tr>
+            <tr>
+                <td data-title="Nombre">Lupe</td>
+                <td data-title="Apellido">Otto</td>
+                <td data-title="Email">lupewitch@yahoo.com.ar</td>
+                <td data-title="Club">Huracán</td>
+                <td data-title="Edad">28</td>
+                <td data-title="Ciudad">CABA</td>
+            </tr>
+            <tr>
+                <td data-title="Nombre">Rafael</td>
+                <td data-title="Apellido">Bustamante</td>
+                <td data-title="Email">rafadios10@gmail.com</td>
+                <td data-title="Club">Boca</td>
+                <td data-title="Edad">32</td>
+                <td data-title="Ciudad">CABA</td>
+            </tr>
+            <tr>
+                <td data-title="Nombre">Pedro</td>
+                <td data-title="Apellido">Casado</td>
+                <td data-title="Email">pedrito23@hotmail.com</td>
+                <td data-title="Club">Independiente</td>
+                <td data-title="Edad">29</td>
+                <td data-title="Ciudad">GBA</td>
+            </tr>
+            <tr>
+                <td data-title="Nombre">Jorge</td>
+                <td data-title="Apellido">Ramos</td>
+                <td data-title="Email">jorge_ramos@gmail.com</td>
+                <td data-title="Club">River</td>
+                <td data-title="Edad">42</td>
+                <td data-title="Ciudad">CABA</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>  
+</body>
+</html>
