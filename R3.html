@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/R3.css">
+    <title>Video Responsive</title>
+</head>
+<body>
+    <!-- primero la foto que nos permitirá pone el botón para el video modal -->
+    <div class="img-container">
+        <img src="/assests/images/video.webp" alt="foto video" class="img">
+        <!-- un div para el boton del modal -->
+        <div id="modalBtn" class="button">
+            <div class="arrow"></div>
+        </div>
+    </div>
+    <!-- El contenedor del video responsive y modal -->
+    <div id="simpleModal" class="modal-content">
+        <div class="modal-video video">
+            <!-- boton para cerrar el modal -->
+            <span class="closeBtn">&times;</span>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bNDLnAUen94" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <!-- El texto lo agreamos en otro div para ayudar al layout -->
+    <div class="text-container">
+        <h2>Give the World the answer they need, become a Supernatural Partner today.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati minima necessitatibus exercitationem aliquid temporibus, reiciendis a cumque sed ducimus, porro veniam, atque incidunt explicabo distinctio voluptate eaque quod sapiente nobis commodi odit officia rem. Earum perferendis deserunt animi, atque deleniti cupiditate cum odio magnam! Harum, architecto. Aliquid cumque eius eligendi.</p>
+    </div>
+    <!-- Agregamos el script de Js -->
+    <script src="/R3.js"></script>
+</body>
+</html>

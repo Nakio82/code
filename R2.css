@@ -1,0 +1,70 @@
+Body {
+    margin: 0;
+}
+
+header {
+    text-decoration: underline;
+    text-align: center;
+    font-size: 2rem;
+}
+/*  ===================
+    Estilos de la Tabla
+    =================== */
+/* Una de las formas de hacerla responsive con el 'overflow-x: scroll' */
+.table-container {
+    margin: 3px 5px;
+    overflow-x: scroll;
+}
+table {
+    width: 100%;
+}
+table, tr, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.5em 0.8em;
+}
+
+th {
+    font-size: 1.5rem;
+    font-variant: small-caps;
+}
+
+tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+tr:hover {
+    background-color: #AFEEEE;
+}
+
+/* MediaQuery que nos permite hacer la tabla responsive */
+@media screen and (max-width: 650px) {
+    /* Hacemos que las filas se coloquen en columnas */
+    table tr {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        padding: 1em;
+    }
+    /* Al sacarle los bordes, y hacer un 'display: none' con el encabezado, queda la información en cajas. */
+    th, td {
+        border: none;
+    }
+    table thead {
+        display: none;
+    }
+
+    /* Ahora agregamos el atributo para que aparezca en el responsive */
+    table td[data-title]{
+        display: flex;
+    }
+    /* Con un ::before logramos que nos quede por delante de los datos */
+    td[data-title]::before{
+        content: attr( data-title );
+        width: 70px;
+        font-variant: small-caps;
+        font-weight: bold;
+    }
+}
